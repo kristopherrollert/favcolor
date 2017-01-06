@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fav Color</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phonestyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ba0e84033c.js"></script>
+</head>
+<body>
+  <div class="color-section">
+    <div class="circle-line">
+    </div>
+    <div class="content">
+      <div class="center-content">
+        <div class="center-header-content">
+          <h3 class="header">FAV COLOR</h3>
+          <h5 class="final-fav-color">&nbsp</h5>
+        </div>
+        <div class="center-sub-content">
+          <h5 id="color-hex">#a5fc70</h5>
+          <button onClick="findFinalColor();"class="done-button"><i class="fa fa-check" aria-hidden="true"></i> done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="menu-tab tabs">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="menu-items">
+      <div class="question-tab tabs menu-item">
+        <i class="fa fa-question" aria-hidden="true"></i>
+      </div>
+      <div class="me-tab tabs menu-item">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+      </div>
+      <div class="refresh-tab tabs menu-item">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 class="modal-header-text">WANT TO KNOW YOUR FAVORITE COLOR?</h2>
+      </div>
+      <div class="modal-body">
+        <p class="modal-body-text">Well, you came to the right place. After dismissing
+          this notifcation box, judge the color by press a
+          number between <b>1</b> and <b>5</b>. <b>1</b> represents pure
+          hatred for the color and <b>5</b> stands for an absolute never-dying
+          love for the color. Go through as
+          many colors as you can, and when you are done,
+          press the done button to find out your favorite
+          color!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
